@@ -1,1 +1,51 @@
-<p>hall works!</p>
+<app-navbar></app-navbar>
+<form class="catering-form">
+    <div class="form-header">
+        <h2>Add New Hall Booking</h2>
+    </div>
+    
+    <div class="form-group">
+        <label class="form-label" for="hallId">Hall ID</label>
+        <input type="text" 
+               id="hallId" 
+               name="hallId" 
+               class="form-input"
+               placeholder="HALL-001"
+               required>
+        <div class="error-message">Please enter a valid hall ID</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="hallName">Hall Name</label>
+        <input type="text" 
+               id="hallName" 
+               name="hallName" 
+               class="form-input"
+               placeholder="Grand Ballroom"
+               required>
+        <div class="error-message">Please enter a hall name</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="hallPrice">Price</label>
+        <input type="number" 
+               id="hallPrice" 
+               name="hallPrice" 
+               class="form-input"
+               placeholder="3999.99"
+               required>
+        <div class="error-message">Please enter a valid price</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="hallDate">Booking Date</label>
+        <input type="date" 
+               id="hallDate" 
+               name="hallDate" 
+               class="form-input"
+               required>
+        <div class="error-message">Please select a date</div>
+    </div>
+
+    <button type="submit" class="submit-button">Add Hall Booking</button>
+</form>
