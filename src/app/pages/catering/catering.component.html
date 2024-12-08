@@ -1,1 +1,51 @@
-<p>catering works!</p>
+<app-navbar></app-navbar>
+<form class="catering-form">
+    <div class="form-header">
+        <h2>Add New Catering Service</h2>
+    </div>
+    
+    <div class="form-group">
+        <label class="form-label" for="cateringId">Catering ID</label>
+        <input type="text" 
+               id="cateringId" 
+               name="cateringId" 
+               class="form-input"
+               placeholder="CAT-001"
+               required>
+        <div class="error-message">Please enter a valid catering ID</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="cateringName">Service Name</label>
+        <input type="text" 
+               id="cateringName" 
+               name="cateringName" 
+               class="form-input"
+               placeholder="Wedding Reception Deluxe"
+               required>
+        <div class="error-message">Please enter a service name</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="cateringPrice">Price</label>
+        <input type="number" 
+               id="cateringPrice" 
+               name="cateringPrice" 
+               class="form-input"
+               placeholder="2499.99"
+               required>
+        <div class="error-message">Please enter a valid price</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="cateringDate">Event Date</label>
+        <input type="date" 
+               id="cateringDate" 
+               name="cateringDate" 
+               class="form-input"
+               required>
+        <div class="error-message">Please select a date</div>
+    </div>
+
+    <button type="submit" class="submit-button">Add Catering Service</button>
+</form>
